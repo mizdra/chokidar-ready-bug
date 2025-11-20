@@ -1,0 +1,21 @@
+{
+  "name": "chokidar-ready-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "mizdra <pp.mizdra@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@parcel/watcher": "^2.5.1",
+    "chokidar": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "typescript": "^5.9.3"
+  }
+}
