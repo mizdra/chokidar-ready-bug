@@ -2,5 +2,5 @@
 
 ```console
 npm i
-node parallel-chokidar.ts 10
+node main.ts 10
 ```
