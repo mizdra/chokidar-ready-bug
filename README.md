@@ -7,20 +7,13 @@ node main.ts 10
 
 ## Expected behavior
 
-All add events are caught. The number of add events is 10. The order of events is non-deterministic.
+All add events are fired. The number of add events is 3. The order of events is non-deterministic.
 
 ```
-File demo/dir-1/file.txt has been added
-File demo/dir-2/file.txt has been added
 File demo/dir-0/file.txt has been added
-File demo/dir-3/file.txt has been added
-File demo/dir-4/file.txt has been added
-File demo/dir-5/file.txt has been added
-File demo/dir-6/file.txt has been added
-File demo/dir-7/file.txt has been added
-File demo/dir-8/file.txt has been added
-File demo/dir-9/file.txt has been added
-add event count: 10
+File demo/dir-2/file.txt has been added
+File demo/dir-1/file.txt has been added
+add event count: 3
 ```
 
 ## Actual behavior
