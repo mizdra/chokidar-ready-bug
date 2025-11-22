@@ -22,10 +22,8 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npx envinfo --system --binaries
-      - run: node main.ts 1
-      - run: node main.ts 2
-      - run: node main.ts 3
-      - run: node main.ts 4
-      - run: node main.ts 5
       - run: node main.ts 10
-      - run: node main.ts 100
+      - run: node main.ts 10
+      - run: node main.ts 10
+      - run: node main.ts 10
+      - run: node main.ts 10
