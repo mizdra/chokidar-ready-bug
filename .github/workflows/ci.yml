@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'npm'
+      - run: npm ci
+      - run: node main.ts 1
+      - run: node main.ts 2
+      - run: node main.ts 3
+      - run: node main.ts 4
+      - run: node main.ts 5
+      - run: node main.ts 10
+      - run: node main.ts 100
